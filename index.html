@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Donald Trump</title>
+    <!--Linking bootstrap style sheet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Linking CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+
+<!--The introduction section text-->
+
+<body>
+    <div id="intro">
+        <div class="container1">
+            <!--Donald Trump picture + googly eyes gif -->
+            <div class="head">
+                <img src="https://purepng.com/public/uploads/large/donald-trump-face-s6p.png" width="200" height="270" class="center" />
+            </div>
+            <div class="eyes">
+                <img src="https://media.giphy.com/media/xThtapjpLfsQarJriM/giphy.gif" width="150" height="110" class="center" />
+            </div>
+        </div>
+        <div class="title">
+            <p class="small">A Sentiment Analysis of</p><br>
+            <p class="large">Donald Trump's</p>
+            <p class="large">Twitter</p>
+        </div>
+        <p class="prose">
+            Donald Trump’s Twitter feed is a treasure trove of sentiment; he has tweeted thousands of opinions and reactions on a multitude of subjects, from all around the world, almost every single day. It has given him a platform to instantly express his views, opinions and beliefs and is a window into not only his thoughts and psyche, but into the kind of messages he wants to communicate to his supporters, and the world at large.
+            <br><br>
+            This webpage will provide an analysis of the rich trail of textual data left behind by Donald Trump through sentiment analysis - which is the process of determining whether a piece of writing is positive, negative or neutral; helping to gauge opinion and beliefs, and providing a small window into the workings of Donald Trump. So let's get started.
+        </p>
+        <br><br>
+        <!--The 'scroll down' arrow -->
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <br><br>
+    </div>
+
+
+    <!--The content sections text -->
+
+    <div class="container">
+        <div id='graphic'>
+            <div id='sections'>
+                <section class="step">
+                </section>
+                <section class="step">
+                    <div class="title">Tweets</div>
+                    Since the start of his presidency, Donald Trump has pressed post on over 5,632 unique tweets (not including retweets).
+                </section>
+                <section class="step">
+                    Here are all of the tweets in grid form.
+                </section>
+                <section class="step">
+                    <div class="title">Positive</div>
+                    And here are all the positive tweets. They represent 59% of all the tweets.
+                </section>
+                <section class="step">
+                    <div class="title">Negative</div>
+                    Here are the negative tweets - only 23% of all tweets.
+                </section>
+                <section class="step">
+                    <div class="title">All together</div>
+                    Neutral is when there is no emotion implied, for instance, a statement or fact.
+                </section>
+                <section class="step">
+                </section>
+            </div>
+            <div id='vis'>
+            </div>
+        </div>
+    </div>
+
+
+    <!--The outro section text -->
+
+    <div id="intro">
+        <br>
+        <p class="prose"><br>
+            So, what did we learn? Well, overall, Donald Trump's Twitter feed is overwhelmingly positive. His most favourited / most infamous tweet, however, was considered neutral:
+        </p>
+        <blockquote class="twitter-tweet" data-lang="en">
+            <p lang="en" dir="ltr">Why would Kim Jong-un insult me by calling me "old," when I would NEVER call him "short and fat?" Oh well, I try so hard to be his friend - and maybe someday that will happen!</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realdonaldtrump/status/929511061954297857?lang=en">Nov 12, 2017</a>
+        </blockquote>
+        <p class="prose">
+            And maybe someday we will know exactly why Donald Trump tweets the way that he does, and what that means for the future of communication between politicians and the world. 
+        </p>
+        <div class="title">
+            <p class="small">Data</p>
+        </div>
+        <p class="prose"> Tweet data comes from the <a href="//www.trumptwitterarchive.com"><font color="212683">The Trump Twitter Archive</font></a>. The data was collected on the 13th of March, 2019, and spans the range 23/01/17 to 12/03/19. I filtered out tweets that began with a quote or "RT" so that I would keep only tweets containing Trump's own language.
+            <br>
+            <p class="center">Created by Isobel Rowe for FIT5147.</p>
+    </div>
+
+
+    <!--CDN link for D3 -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!--Link for jquery -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!--Link for Twitter widget -->
+    <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!--Linking both .js files -->
+    <script src="scroller.js"></script>
+    <script src="sections.js"></script>
+
+</body></html>
